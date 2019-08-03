@@ -24,7 +24,29 @@ var d = 1;
 var e = 1;
 var f = 0;
 
+// 加法與減法
 f = d++;    // 先給值再遞增
 f = ++e;    // 先遞增再給值
 
 document.getElementById("box2").innerHTML = f;
+
+var g = 10;
+
+g -= 5;     // 適用於 +-*/%
+
+document.getElementById("box3").innerHTML = g;
+
+// 判斷式
+var score = 100;
+var box4 = document.getElementById("box4");
+
+// if 可搭配一個 else 與多個 else if
+if (score >= 60) {
+    box4.innerHTML = "及格";
+}
+else if (score >= 50) {
+    box4.innerHTML = "可以補考";
+}
+else {
+    box4.innerHTML = "當掉!";
+}
