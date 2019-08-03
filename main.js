@@ -50,3 +50,18 @@ else if (score >= 50) {
 else {
     box4.innerHTML = "當掉!";
 }
+
+// 函式、方法 - PUG、Sass Mixin
+
+// 匿名函式
+// function (){}
+
+// 定義：函式 函式名稱(參數) { 內容 }
+function test1(text) {
+    document.getElementById("box5").innerHTML = text;
+}
+
+// 使用函式
+test1("123456789");
+
+test1("測試文字");
